@@ -1,0 +1,20 @@
+<ion-view view-title="Browse">
+	<ion-content id="browse" ng-controller="browseCtrl">
+		<div class="list">
+			<div class="item item-input-inset">
+				<label class="item-input-wrapper">
+					<input type="text" placeholder="Search.." ng-model="name">
+				</label>
+				<i class="icon ion-search calm"></i>
+			</div>
+		</div>
+		<ul class="list">
+		    <li class="item item-checkbox" ng-repeat="ov in overview | filter:name">
+		    	{{ ov.name }} 
+		    	<label class="checkbox">
+       				<input type="checkbox">
+     			</label>
+     		</li>
+		</ul>
+	</ion-content>
+</ion-view>

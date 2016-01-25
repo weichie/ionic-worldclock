@@ -1,0 +1,15 @@
+<ion-view view-title="History">
+	<ion-content ng-controller="historyCtrl">
+		<ul class="list">
+			<li ng-repeat="con in countries" class="item item-toggle">
+				{{ con.country }}
+				<label class="toggle toggle-calm">
+					<input type="checkbox" checked="true">
+					<div class="track">
+						<div class="handle"></div>
+					</div>
+				</label>
+			</li>
+		</ul>
+	</ion-content>
+</ion-view>
