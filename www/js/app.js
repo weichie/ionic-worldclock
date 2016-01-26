@@ -1,4 +1,4 @@
-angular.module('bar', ['ionic', 'bar.controllers'])
+angular.module('clock', ['ionic', 'clock.controllers'])
 
 .run(function($ionicPlatform){
     $ionicPlatform.ready(function(){
